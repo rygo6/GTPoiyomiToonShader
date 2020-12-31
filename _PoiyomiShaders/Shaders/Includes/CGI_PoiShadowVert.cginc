@@ -1,8 +1,12 @@
+#include "CGI_GTModelDecode.cginc"
+
 float _EnableTouchGlow, _EnableBulge;
 uint _VertexManipulationHeightUV;
 
 V2FShadow vertShadowCaster(VertexInputShadow v)
 {
+    v.vertex = modelDecode(v.vertex, v.normal, v.uv6, v.uv7);
+
     V2FShadow o;
     UNITY_SETUP_INSTANCE_ID(v);
     

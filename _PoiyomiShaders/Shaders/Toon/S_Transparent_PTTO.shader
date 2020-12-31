@@ -835,6 +835,11 @@ Shader ".poiyomi/Toon/Advanced/Outlines Transparent"
         [Enum(Off, 0, Attenuation, 1, Direct Lighting, 2, Indirect Lighting, 3, light Map, 4, Ramped Light Map, 5, Final Lighting, 6)] _DebugLightingData ("Lighting Data", Int) = 0
         [Enum(Off, 0, View Dir, 1, Tangent View Dir, 2, Forward Dir, 3, WorldPos, 4, View Dot Normal, 5)] _DebugCameraData ("Camera Data", Int) = 0
         [HideInInspector] m_end_debugOptions ("Debug", Float) = 0
+        
+        _Key0 ("Key 0", Range(-100,100)) = 0
+        _Key1 ("Key 1", Range(-100,100)) = 0
+        _Key2 ("Key 2", Range(-100,100)) = 0
+        _Key3 ("Key 3", Range(-100,100)) = 0
     }
     
     //originalEditorCustomEditor "PoiToon"

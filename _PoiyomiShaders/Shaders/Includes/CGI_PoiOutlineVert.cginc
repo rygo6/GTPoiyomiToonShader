@@ -2,7 +2,8 @@
     #define OutlineVert
     
     #include "CGI_PoiV2F.cginc"
-    
+    #include "CGI_GTModelDecode.cginc"
+
     uint _OutlineMode;
     float4 _OutlinePersonaDirection;
     float4 _OutlineDropShadowOffset;
@@ -12,6 +13,8 @@
     sampler2D _OutlineMask; float4 _OutlineMask_ST;
     v2f vert(appdata v)
     {
+        v.vertex = modelDecode(v.vertex, v.normal, v.uv6, v.uv7);
+    
         UNITY_SETUP_INSTANCE_ID(v);
         v2f o;
         UNITY_INITIALIZE_OUTPUT(v2f, o);
@@ -79,6 +82,7 @@
         
         UNITY_TRANSFER_SHADOW(o, o.uv0);
         UNITY_TRANSFER_FOG(o, o.pos);
+        
         return o;
     }
     

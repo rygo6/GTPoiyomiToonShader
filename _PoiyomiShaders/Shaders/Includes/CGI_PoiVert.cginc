@@ -1,10 +1,14 @@
 #ifndef POI_VERT
     #define POI_VERT
     
+    #include "CGI_GTModelDecode.cginc"
+    
     uint _VertexManipulationHeightUV;
     float _VertexUnwrap;
     v2f vert(appdata v)
     {
+        v.vertex = modelDecode(v.vertex, v.normal, v.uv6, v.uv7);
+    
         UNITY_SETUP_INSTANCE_ID(v);
         v2f o;
         #ifdef _COLOROVERLAY_ON
@@ -101,7 +105,7 @@
         #ifdef POI_META_PASS
             o.pos = UnityMetaVertexPosition(v.vertex, v.uv1.xy, v.uv2.xy, unity_LightmapST, unity_DynamicLightmapST);
         #endif
-        
+    
         return o;
     }
 #endif
