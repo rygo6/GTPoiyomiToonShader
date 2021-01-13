@@ -1,2 +1,3 @@
-# [Join the discord here](https://poiyomi.com)
-# [Download the latest unity package here](https://github.com/poiyomi/PoiyomiToonShader/releases/latest)
+# GTPoiyomiToonShader
+
+This is a fork of the Poiyomi Toon Shader maintained specifical for user with the GeoTetra AvaCrypt avatar encryption system. 
