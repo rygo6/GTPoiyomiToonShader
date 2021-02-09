@@ -13,7 +13,7 @@ float4 modelDecode(float4 vertex, float3 normal, float2 uv0, float2 uv1)
 
     // if key is 0, allow it to be as such, so it can render nor-crypted avatars correctly
     // by setting the keys to 0 on the shader
-    if (key0 > 0)
+    if (key0 < 0 || key0 > 0 || key1 < 0 || key1 > 0 || key2 < 0 || key2 > 0 || key3 < 0 || key3 > 0)
     {
         // round to three to minimize potential of parameter off sync
         key0 = ((int)(key0 / 3)) * 3 + 1;
