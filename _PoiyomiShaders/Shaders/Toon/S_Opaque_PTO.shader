@@ -152,7 +152,7 @@ Shader ".poiyomi/Toon/Advanced/Opaque"
         _LightingAOTex ("AO Map", 2D) = "white" { }
         [HideInInspector][Vector2]_LightingAOTexPan ("Panning", Vector) = (0, 0, 0, 0)
         [HideInInspector][Enum(UV0, 0, UV1, 1, UV2, 2, UV3, 3, DistortedUV1, 4)] _LightingAOTexUV ("UV", Int) = 0
-        _AOStrength ("AO Strength", Range(0, 1)) = 0
+        _AOStrength ("AO Strength", Range(0, 10)) = 0
         _LightingMinLightBrightness ("Min Brightness", Range(0, 1)) = 0
         _LightingIndirectContribution ("Indirect Contribution", Range(0, 1)) = .2
         _AttenuationMultiplier ("Recieve Casted Shadows?", Range(0, 1)) = 0
