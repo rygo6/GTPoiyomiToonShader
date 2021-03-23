@@ -28,19 +28,19 @@ float4 modelDecode(float4 vertex, float3 normal, float2 uv0, float2 uv1)
         key5 = ((int)(key5 / 3)) * 3 + 1;
     }
 
-    key0 *= 1;
-    key1 *= 2;
-    key2 *= 3;
-    key3 *= 4;
-    key4 *= 5;
-    key5 *= 6;
+    key0 *= 1.234567;
+    key1 *= 1.469134;
+    key2 *= 1.703701;
+    key3 *= 1.938268;
+    key4 *= 2.172835;
+    key5 *= 2.407402;
     
-    vertex.xyz -= normal * uv0.x * (sin((key0 - key5) * 1.5) * cos(key2 - key3));
-    vertex.xyz -= normal * uv0.y * (sin((key1 - key4) * 2.0) * cos(key1 - key4));
-    vertex.xyz -= normal * uv0.x * (sin((key2 - key3) * 2.5) * cos(key0 - key5));
-    vertex.xyz -= normal * uv1.y * (sin((key3 - key2) * 3.0) * cos(key5 - key0));
-    vertex.xyz -= normal * uv1.x * (sin((key4 - key1) * 3.5) * cos(key4 - key1));
-    vertex.xyz -= normal * uv1.y * (sin((key5 - key0) * 4.0) * cos(key3 - key2));
+    vertex.xyz -= normal * uv0.x * (sin((key0 - key5) * 0.234567) * cos(key2 - key3));
+    vertex.xyz -= normal * uv0.y * (sin((key1 - key4) * 0.469134) * cos(key1 - key4));
+    vertex.xyz -= normal * uv0.x * (sin((key2 - key3) * 0.703701) * cos(key0 - key5));
+    vertex.xyz -= normal * uv1.y * (sin((key3 - key2) * 0.938268) * cos(key5 - key0));
+    vertex.xyz -= normal * uv1.x * (sin((key4 - key1) * 1.172835) * cos(key4 - key1));
+    vertex.xyz -= normal * uv1.y * (sin((key5 - key0) * 1.407402) * cos(key3 - key2));
     
     return vertex;
 }
