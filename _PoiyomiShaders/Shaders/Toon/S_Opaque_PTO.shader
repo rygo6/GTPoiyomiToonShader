@@ -807,6 +807,8 @@ Shader ".poiyomi/Toon/Advanced/Opaque"
         _Key1 ("Key 1", Range(-100,100)) = 0
         _Key2 ("Key 2", Range(-100,100)) = 0
         _Key3 ("Key 3", Range(-100,100)) = 0
+        _Key4 ("Key 4", Range(-100,100)) = 0
+        _Key5 ("Key 5", Range(-100,100)) = 0
     }
     
     CustomEditor "ThryEditor"
