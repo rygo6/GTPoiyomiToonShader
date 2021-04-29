@@ -1,6 +1,6 @@
 # GTPoiyomiToonShader
 
-If you are download this, click File > Download Zip. I have not made any new releases on the releases page with my edits for AvaCrypt, all releases on that page are just old version of Poiyomi.
+If you are downloading this, click File > Download Zip. I have not made any new releases on the releases page with my edits for AvaCrypt, all releases on that page are just old version of Poiyomi.
 
 This is a fork of the Poiyomi Toon Shader maintained specifically for use with the `GeoTetra AvaCrypt` avatar encryption system. 
 
